@@ -21,8 +21,6 @@ Router.map(function() {
   });
 
   this.route("creation-page");
-  this.route("admin-page");
-  this.route("currentUser");
   this.route("sign-up");
 });
 
