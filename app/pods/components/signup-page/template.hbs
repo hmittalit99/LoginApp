@@ -1,0 +1,59 @@
+<h1>Sign Up to Create Account <br></h1>
+<div id ="nav">
+<label>
+    Username:
+    {{input type="text" value=username}}
+	<br>
+</label>
+<label>
+    First Name:
+    {{input type="text" value=firstname}}
+	<br>
+</label>
+<label>
+    Last Name:
+    {{input type="text" value=lastname}}
+	<br>
+</label>
+<label>
+    Password:
+    {{input type="password" value=password}}
+	<br>
+</label>
+<label>
+  	Confirm Password:
+  	{{input type="password" value=confirmpassword}}
+</label>
+<br>
+<button {{action "submit"}} >Sign Up</button>
+<div id="error">
+        {{#if loginFailed}}
+        Invalid credentials !
+        {{/if}}
+
+        {{#unless username}}
+        Username !<br>
+        {{/unless}}
+
+        {{#unless firstname}}
+        Firstname !<br>
+        {{/unless}}
+
+        {{#unless lastname}}
+        Lastname !<br>
+        {{/unless}}
+
+        {{#unless password}}
+        Password !<br>
+        {{/unless}}
+
+        {{#unless confirmpassword}}
+         Confirm Password !<br>
+        {{/unless}}
+
+        {{#if confPassMatch}}
+        Password and Confimed Password does not match !
+        {{/if}}
+
+</div>
+

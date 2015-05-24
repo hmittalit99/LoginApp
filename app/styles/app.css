@@ -1,3 +1,53 @@
-html, body {
+/*html, body {
   margin: 20px;
+}*/
+
+ <style>
+#header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
 }
+#nav {
+    line-height:30px;
+    <!--background-color:#eeeeee; -->
+    height:300px;
+    width:200px;
+    float:left;
+    padding:8px;
+}
+#section {
+    width:350px;
+    float:left;
+    padding:10px;
+}
+#aside {
+    width:350px;
+    float:right;
+    padding:10px;
+}
+#footer {
+  <!--  background-color:black; -->
+    color:white;
+    clear:both;
+    text-align:left;
+    padding:5px;
+}
+#outer{
+
+    padding-left:32%;
+}
+
+#one{
+    float:left;
+}
+#two{
+    padding-left: 20%;
+    position: absolute;
+    top: 5%;
+}
+#error{
+    color:red;
+}
+</style> 

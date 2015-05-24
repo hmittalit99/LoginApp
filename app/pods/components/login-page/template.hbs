@@ -1,0 +1,32 @@
+
+	
+	<div id="nav">
+		<label>
+	        Username:
+	        {{input type="text" value=username}}
+        	<br>
+        </label>	
+		<label>
+	        Password:
+	        {{input type="password" value=password}}
+        	<br>
+        </label>
+
+	<button {{action "login" }} >Login</button><br>
+
+	
+	<div id="error">
+
+		{{#if loginFailed}}
+		Invalid credentials !
+		{{/if}}
+
+		{{#unless username}}
+		Username !<br>
+		{{/unless}}
+
+		{{#unless password}}
+		Password !<br>
+		{{/unless}}
+	</div>
+</div>

@@ -1,0 +1,16 @@
+<h1>List of Users</h1>
+<div id="userName">
+	<div id ="one">
+		{{#each user in model}}
+			<ul>
+			  <li>{{#link-to 'user' user}}{{user.firstname}} {{user.lastname}} {{/link-to}}<br></li>
+			</ul> 
+		{{/each}}
+	</div>
+
+	<div id ="section">
+		<div id="two">
+		{{outlet}}
+		</div>
+	</div>
+</div>
